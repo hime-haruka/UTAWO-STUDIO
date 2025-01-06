@@ -55,10 +55,12 @@ body::-webkit-scrollbar-button  {
 }
 
 .headerWrap p {
-    font-size: 2rem;
+    font-size: 1.5em;
+    text-align: center;
 }
 
 .logoBox {
+    width: 20%;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -80,6 +82,7 @@ body::-webkit-scrollbar-button  {
 }
 
 .nav {
+    width: 20%;
     display: flex;
     justify-content: end;
     align-items: center;
