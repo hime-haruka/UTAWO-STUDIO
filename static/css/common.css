@@ -431,19 +431,10 @@ a:hover, a:focus {
     box-sizing: border-box;
     padding: 0.3em;
     color: #dddddd;
-    align-items: center;
-}
 
-.snsList {
     display: flex;
-    justify-content: start;
-    padding-left: 1em;
-}
-
-.snsList .iconBox {
-    width: 2.5em;
-    height: 2.5em;
-    margin-right: 0.5rem;
+    flex-direction: column;
+    align-items: end;
 }
 
 .footerWrap .logoBox {
@@ -459,6 +450,7 @@ a:hover, a:focus {
     margin-bottom: 0;
     font-size: small;
     padding-left: 1rem;
+    text-align: right;
 }
 
 /* ----------FOOTER---------- */
@@ -560,6 +552,10 @@ a:hover, a:focus {
 
 /* 모바일 */
 @media (max-width: 412px) {
+
+    body {
+        background-position: top left;
+    }
 
     .sampleSec .flexBox {
         display: block;
