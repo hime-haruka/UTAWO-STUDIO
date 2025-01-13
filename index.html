@@ -14,6 +14,10 @@
     <link rel="apple-touch-icon-precomposed" href="./static/images/icon.ico">
     <!-- /favicon -->
 
+    <!-- CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- CSS -->
     <link rel="stylesheet" href="./static/css/common.css">
 
@@ -21,11 +25,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./static/js/common.js"></script>
 </head>
+
 <body>
     <head class="header">
         <div class="headerWrap">
             <div class="logoBox">
-                <div class="imgBox"><img src="./static/images/logo-mono.png"></div>
+                <div class="imgBox"><img src="https://i.ibb.co/2K7BY1y/logo-mono.png"></div>
                 <!-- <h2 class="headerFont">UTAWO STUDIO</h2> -->
             </div>
             <div class="commonFont"><p>MIX COMMISSION</p></div>
@@ -37,7 +42,7 @@
         </div>
     </head>
 
-    <main class="main">
+    <main class="main" id="top">
         <div class="mainWrap">
             <!-- sampleSec -->
             <section class="section sampleSec" id="Sample">
@@ -45,21 +50,21 @@
                     <div class="titleBox titleFont">
                         <p>Sample</p>
                         <div>
-                            <a class="shortcut" href="https://www.youtube.com/watch?v=43NlrTu8UaU&list=PL3x2gE4m_MPPOh047P75pIm_YHbKI7qYF" target="_blank">
+                            <a class="shortcut" href="https://youtube.com/playlist?list=PL3x2gE4m_MPPOh047P75pIm_YHbKI7qYF&si=AsF1GZMn9_OWo06z" target="_blank">
                                 <p class="commonFont">재생목록 바로가기</p>
-                                <div class="imgBox"></div>
+                                <i class="fa-solid fa-circle-chevron-right"></i>
                             </a>
                         </div>
                     </div>
                     <div class="flexBox">
                         <div class="videoWrap">
-                            <iframe src="https://www.youtube.com/embed/videoseries?si=KcG_FFoeJyCyfyUL&amp;list=PL3x2gE4m_MPPOh047P75pIm_YHbKI7qYF" id="video" title="UTAWO MIX✨" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/h5Ab64qXRHM?si=pLWYxVIjZXFPS3Oe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                         <div class="videoWrap">
                             <iframe src="https://www.youtube.com/embed/43NlrTu8UaU?si=_J2RaPdy7sG2reA0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                         <div class="videoWrap">
-                            <iframe src="https://www.youtube.com/embed/3BOy61HUlzo?si=N_93WJZubUO1gyNz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/l1fB9Kqj8DE?si=oE-C5TC_xRJPa6MQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -168,22 +173,17 @@
                     </div>
                 </div>
             </section>
+
+            <!-- button -->
+            <button class="custom-btn btn">
+                <a href="https://open.kakao.com/me/utawo" target="_blank" class="commonFont">의뢰하기</a>
+            </button>
         </div>
     </main>
 
     <footer class="footer">
         <div class="footerWrap">
-            <div class="flexBox">
-                <div class="social">
-                    <ul class="snsList">
-                        <li class="iconBox twitter"><a href="https://x.com/utawoooo"></a></li>
-                        <li class="iconBox youtube"><a href="https://www.youtube.com/@utawoooo"></a></li>
-                        <li class="iconBox kakao"><a href="https://open.kakao.com/me/utawo"></a></li>
-                        <li class="iconBox chzzk"><a href="https://chzzk.naver.com/fa261711bfbacc8283be4239e609775c"></a></li>
-                    </ul>
-                </div>
-                <div class="logoBox"><img src="./static/images/logo-text-white.png"></div>
-            </div>
+            <div class="logoBox"><img src="https://i.ibb.co/G2cVSG2/logo-text-white.png"></div> 
             <div class="copyright commonFont"><p>© 2025. UTAWO. All rights reserved.</p></div>
         </div>
     </footer>

@@ -4,14 +4,24 @@
 
 /* ----------BODY---------- */
 body {
-    background-image: url(/static/images/background-img.png);
+    background-image: url(https://i.postimg.cc/s263M1Wq/background-img.png);
+    background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+
+    font-size: 16px;
 }
 
 .margin-bottom {
     margin-bottom: 2.5rem !important;
+}
+
+.flexBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;   
 }
 /* ----------BODY---------- */
 
@@ -104,7 +114,7 @@ a:hover, a:focus {
     position: relative;
     display: block;
     text-decoration: none;
-    padding: 1em;
+    padding: 1rem;
     color: #5e6aa0;
 }
 
@@ -189,6 +199,13 @@ a:hover, a:focus {
     font-size: 1.3rem;
     padding: 0.6rem;
 }
+
+.sampleSec .titleBox .shortcut i {
+    position: relative;
+    top: 0.1rem;
+    right: 0;
+}
+
 
 .titleBox p {
     margin-right: 0.5rem;
@@ -326,9 +343,79 @@ a:hover, a:focus {
     background-color: #6e9cd1;
     color: #fff;
 }
-
-
 /* ----------MAIN----------- */
+
+
+
+
+/* ---------button--------- */
+.custom-btn {
+    aspect-ratio: 1 / 1;
+    width: 100px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: fixed;
+    top: 50%;
+    right: 3%;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+    z-index: 99;
+    border-radius: 50%;
+}
+
+.btn {
+    border: none;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.btn:after {
+    position: absolute;
+    content: " ";
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1fd1f9;
+    background-image: linear-gradient(315deg, #6e9cd1 0%, #ff88f5 74%);
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: transparent;
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.5),
+      inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+    color: #fff;
+}
+
+.btn:hover:after {
+    -webkit-transform: scale(2) rotate(180deg);
+    transform: scale(2) rotate(180deg);
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.5),
+      inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+}
+
+.btn a {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #fff;
+}
+/* ---------button--------- */
+
 
 
 
@@ -347,13 +434,6 @@ a:hover, a:focus {
     align-items: center;
 }
 
-.flexBox {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: top;   
-}
-
 .snsList {
     display: flex;
     justify-content: start;
@@ -364,34 +444,6 @@ a:hover, a:focus {
     width: 2.5em;
     height: 2.5em;
     margin-right: 0.5rem;
-    border-radius: 50%;
-    padding: 0.5em;
-    box-sizing: border-box;
-}
-
-.snsList .iconBox a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-.twitter a {
-    background-image: url(/static/images/X-Logo.png);
-}
-
-.youtube a {
-    background-image: url(/static/images/Youtube-logo.png);
-}
-
-.kakao a {
-    background-image: url(/static/images/kakao-logo.png);
-}
-
-.chzzk a {
-    background-image: url(/static/images/chzzk-logo.png);
 }
 
 .footerWrap .logoBox {
@@ -403,14 +455,122 @@ a:hover, a:focus {
 }
 
 .copyright {
-    text-align: right;
     padding-right: 10px;
     margin-bottom: 0;
     font-size: small;
-}
-
-.copyright p {
-    margin-bottom: 0;
+    padding-left: 1rem;
 }
 
 /* ----------FOOTER---------- */
+
+
+
+
+
+
+
+
+/* ----------Media Query----------- */
+@media (max-width: 1080px) {
+
+    /* header */
+    .headerWrap {
+        padding: 0 1rem;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    /* section */
+    .PriceSec, .notisec {
+        padding: 0 2rem 3rem 2rem;
+    }
+
+    .sampleSec {
+        padding: 80px 2rem 3rem 2rem;
+    }
+
+    /* PriceSec */
+    .flexBox.price-content {
+        display: block;
+    }
+
+    .contentBox {
+        width: 100%;
+        height: fit-content;
+        margin-bottom: 1em;
+    }
+
+    .work-period .flexBox {
+        display: block;
+    }
+
+    .work-period .flexBox {
+        display: block;
+    }
+
+    .work-period .flexBox.margin-bottom {
+        margin-bottom: 0.5rem !important;
+    }
+
+    .work-period .flexBox p {
+        display: inline-block;
+        margin-bottom: 1rem;
+    }
+
+    /* notisec */
+    .notisec .flexBox {
+        display: block;
+    }
+
+    .suasion, .request {
+        width: 100%;
+    }
+
+    .suasion {
+        margin-bottom: 3rem;
+    }
+
+    /* top-button */
+    .custom-btn {
+        aspect-ratio: 1 / 1;
+        width: 65px;
+        color: #fff;
+        border-radius: 5px;
+        padding: 5px 15px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 500;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: fixed;
+        top: 90%;
+        right: 3%;
+        display: inline-block;
+        outline: none;
+        z-index: 99;
+        border-radius: 50%;
+    }
+
+    .custom-btn a {
+        font-size: 1rem;
+    }
+}
+
+/* 모바일 */
+@media (max-width: 412px) {
+
+    .sampleSec .flexBox {
+        display: block;
+    }
+
+    .sampleSec .flexBox .videoWrap {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .notisec {
+        font-size: 12px;
+    }
+}
